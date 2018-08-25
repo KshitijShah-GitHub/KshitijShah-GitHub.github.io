@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="My personal website, like a resume on
+    the web">
+    <title> Kshitij Shah </title>
+    <link
+     href="https://fonts.googleapis.com/css?family=Lato|Roboto:300|Playfair+Display:700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <link rel="icon" href="Images/favicon3.png">
+</head>
+
+<body>
+<div id="gray_bg"></div>
+<div class="landing_page">
+    <div id='hello' class="header_text">
+        <span id='hello_world' class="header_text"></span>
+        <div id='hello_underscore'>_</div>
+    </div>
+    <div class="nn_animation">
+        <canvas id="nn_anim"></canvas>
+    </div>
+</div>
+
+<div class="sectionblock" id="whoamiblock">
+    <div class="sectioncontent" id="whoamicontent">
+        <h2 class="sectionheader" id="whoamih2">Who Am I?</h2>
+        <p class="sectionp" id="whoamip">
+        Hi! Welcome to my website. I'm Kshitij Shah, a second
+        year undergraduate student at the St. George campus of University of
+        Toronto, pursuing an Honors Bachelor of Science in Computer Science.
+        I'm enrolled in a Computer Science Specialist, a Statistics Major, and
+        a Mathematics Minor. I enjoy programming and some of my hobbies include
+        filmmaking and graphic design. I have a passion for efficiency and
+        clarity, whether that be in code, math, or design.
+        <br><br>
+        My eventual career goal is to apply statistics, machine learning, and
+        mathematical modeling in fields such as finance, quantitative research,
+        and data science. I am currently looking for a internship for the 2019
+        summer term. I have some more information about my skills and projects
+        below.
+        </p>
+    </div>
+    <div class="imagecontainer" id="whoamiimage">
+        <img src="Images/me.png" alt="An image of me" id="imgofme">
+        <p class="sectionp" id="imagecaption">This is me</p>
+    </div>
+</div>
+
+<div class="sectionblock" id="skillsblock">
+    <div class="sectioncontent" id="skillscontent">
+        <h2 class="sectionheader">My Skills:</h2>
+        <div class="splitpane" id="skillcontainer">
+            <div class="stackpane" id="skillgraphs">
+                <h3 class="sectionsubhead">Programming:</h3>
+                <div class="stackpane" id="graphs">
+                    <h4 class="bartitle"><b>Python</b></h4>
+                    <div class="bar" id="python">
+                        <p class="sectionp bartext">12 months</p>
+                    </div>
+                    <h4 class="bartitle"><b>Java</b></h4>
+                    <div class="bar" id="java">
+                        <p class="sectionp bartext">10 months</p>
+                    </div>
+                    <h4 class="bartitle"><b>JavaScript</b></h4>
+                    <div class="bar" id="javascript">
+                        <p class="sectionp bartext">4 months</p>
+                    </div>
+                    <h4 class="bartitle"><b>HTML/CSS</b></h4>
+                    <div class="bar" id="htmlcss">
+                        <p class="sectionp bartext">4 months</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stackpane" id="otherskills">
+                <h3 class="sectionsubhead">Other Skills:</h3>
+                <ul id="otherskilllist">
+                    <li>Jupyter Notebooks</li>
+                    <li>JavaFX</li>
+                    <li>JQuery</li>
+                    <li><i>LaTeX</i></li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Premiere Pro</li>
+                    <li>Adobe After Effects</li>
+                    <li>Microsoft Office</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sectionblock" id="projectsblock">
+    <div class="sectioncontent" id="projectscontent">
+        <h2 class="sectionheader">Some Recent Projects</h2>
+        <div class="stackpane" id="projectscontainer">
+            <a href="https://www.google.com" target="_blank" class="projlink">
+                <div class="splitpane projectitem">
+                    <div class="imagecontainer projectimagecontainer">
+                        <img class="projectimage"
+                        src="Images\website_proj_gif.gif"
+                        alt=""></img>
+                    </div>
+                    <div class="projecttext">
+                        <div class="projecttitle">
+                            <h4 class="projectname sectionsubhead">
+                                This Website
+                            </h4>
+                            <h5 class="projectsubtext projectdate">
+                                August 2018
+                            </h5>
+                        </div>
+                        <p class="projectsubtext projecttech">
+                            <i> HTML &ensp;&middot;&ensp; CSS &ensp;&middot;&ensp; JavaScript &ensp;&middot;&ensp; JQuery &ensp;&middot;&ensp; Photoshop </i>
+                        </p>
+                        <p class="sectionp projectdescription">
+                            This website is a personal portfolio of my skills and
+                            projects to showcase my abilities. The project served
+                            mainly to be a tool for employers and for me learn about
+                            web development and javascript. I used OOP and some
+                            linear algebra principles for the animation on the
+                            nodes on the landing page.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a
+            href="https://github.com/KshitijShah-GitHub/Linear_Regression_with_Gradient_Descent"
+            target="_blank"
+            class="projlink">
+                <div class="splitpane projectitem">
+                    <div class="imagecontainer projectimagecontainer">
+                        <img class="projectimage"
+                        src="Images\lin_reg_proj_gif.gif"
+                        alt=""></img>
+                    </div>
+                    <div class="projecttext">
+                        <div class="projecttitle">
+                            <h4 class="projectname sectionsubhead">Univariate Linear Regression</h4>
+                            <h5 class="projectsubtext projectdate">June 2018</h5>
+                        </div>
+                        <p class="projectsubtext projecttech">
+                            <i>
+                                Python &ensp;&middot;&ensp; Jupyter Notebooks &ensp;&middot;&ensp; Matplotlib &ensp;&middot;&ensp; Numpy &ensp;&middot;&ensp; LaTeX
+                            </i>
+                        </p>
+                        <p class="sectionp projectdescription">
+                            Implemented gradient descent to minimize a mean square
+                            error function for randomly generated dataset to find
+                            a line of best fit. Project was intended to be a self
+                            structured introduction to regression and gradient
+                            descent. Used LaTeX markup to take detailed notes of the
+                            math behind the code in the notebook.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a
+            href="https://github.com/KshitijShah-GitHub/PythonSQLite3Test"
+            target="_blank"
+            class="projlink">
+                <div class="splitpane projectitem">
+                    <div class="imagecontainer projectimagecontainer">
+                        <img class="projectimage"
+                        src="Images\py_sqlite3_proj_gif.gif"
+                        alt=""></img>
+                    </div>
+                    <div class="projecttext">
+                        <div class="projecttitle">
+                            <h4 class="projectname sectionsubhead">Python Database GUI</h4>
+                            <h5 class="projectsubtext projectdate">June 2018</h5>
+                        </div>
+                        <p class="projectsubtext projecttech">
+                            <i> Python &ensp;&middot;&ensp; SQLite3 &ensp;&middot;&ensp; TKinter</i>
+                        </p>
+                        <p class="sectionp projectdescription">
+                            Created a GUI that connects to a database file to
+                            display records, add, modify, and remove records using
+                            generated IDs for added records. This was project was
+                            for an interview, but also served as an opportunity to
+                            work with GUIs in Python as well as an exploration
+                            of basic database manipulation.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a
+            href="https://github.com/KshitijShah-GitHub/Python_Taylor_Series_Estimation"
+            target="_blank"
+            class="projlink">
+                <div class="splitpane projectitem">
+                    <div class="imagecontainer projectimagecontainer">
+                        <img class="projectimage imagecontainer"
+                        src="Images\taylor_series_proj_gif.gif"
+                        alt=""></img>
+                    </div>
+                    <div class="projecttext">
+                        <div class="projecttitle">
+                            <h4 class="projectname sectionsubhead">Taylor Series Estimator</h4>
+                            <h5 class="projectsubtext projectdate">April 2018</h5>
+                        </div>
+                        <p class="projectsubtext projecttech">
+                            <i> Python &ensp;&middot;&ensp; Dynamic Programming</i>
+                        </p>
+                        <p class="sectionp projectdescription">
+                            Used Taylor Series for basic functions (sin, cosine,
+                            exponential) to estimate at any given point to any
+                            given precision using the concept of alternating series
+                            test. Used dynamic programming to optimize
+                            repeated calculation of fatorials. This project was
+                            an attempt to convert somewhat abstract math concepts
+                            into code.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="sectionblock" id="resourcesblock">
+    <div class="sectioncontent" id="resourcescontent">
+        <h2 class="sectionheader">More About Me</h2>
+        <div class="splitpane" id="resourcescontainer">
+            <div class="stackpane" id="linkscontainer">
+                <h3 class="sectionsubhead">Contact Me:</h3>
+                <div class="gridpane" id="links">
+
+                    <a class="linktext" id="link1" target="_blank"
+                    href="Documents/kshitij_shah_resume.pdf">
+                        My Resume
+                    </a>
+                    <i class="material-icons md-32" id="icon1">attach_file</i>
+
+                    <a class="linktext" id="link2" target="_blank"
+                    href="https://github.com/KshitijShah-GitHub">
+                        My GitHub
+                    </a>
+                    <i class="material-icons md-32" id="icon2">code</i>
+
+                    <a class="linktext" id="link3" target="_blank"
+                    href="https://www.linkedin.com/in/kshitij-shah-0883a0166/">
+                        My LinkedIn
+                    </a>
+                    <i class="material-icons md-32" id="icon3">person</i>
+
+                    <a class="linktext" id="link4" target="_blank"
+                    href="Documents/kshitij_shah_unofficial_transcript.pdf">
+                        My Transcript
+                    </a>
+                    <i class="material-icons md-32"
+                    id="icon4">school</i>
+
+                    <a class="linktext" id="link5" target="_blank"
+                    href="https://www.youtube.com/channel/UC44Xvic0-4WkBvcIE3A6Zqw?">
+                        My YouTube
+                    </a>
+                    <i class="material-icons md-32"
+                    id="icon5">ondemand_video</i>
+
+                    <a class="linktext" id="link6" target="_blank"
+                    href="mailto:kshnik@gmail.com?subject=Hi!">
+                        kshnik@gmail.com
+                    </a>
+                    <i class="material-icons md-32" id="icon6">email</i>
+
+                    <a class="linktext" id="link7" target="_blank"
+                    href="tel:+1-416-505-4684">
+                        (416) 505 4684
+                    </a>
+                    <i class="material-icons md-32" id="icon7">call</i>
+
+                    <a class="linktext" id="link8" target="_blank"
+                    href="https://www.google.com/maps/place/University+of+Toronto+-+St.+George+Campus/@43.6628917,-79.3978504,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34b8f331fd9b:0x8d1d9bb6765a76f7!8m2!3d43.6628917!4d-79.3956564">
+                        Toronto, Ontario
+                    </a>
+                    <i class="material-icons md-32" id="icon8">place</i>
+                </div>
+            </div>
+            <div class="stackpane" id="coursescontainer">
+                <h3 class="sectionsubhead">My Courses:</h3>
+                <div class="stackpane" id="tabpane">
+                    <div class="tabnav splitpane">
+                        <button class="tab" onclick="openYear(event,'secondyear')"
+                        id="defaultOpen">
+                            Second Year (In Progress)
+                        </button>
+                        <button class="tab" onclick="openYear(event,'firstyear')">
+                            First Year (Completed)
+                        </button>
+                    </div>
+
+                    <div class="tabcontent" id="secondyear">
+                        <h4 class="yearname sectionp">
+                            <b>Second Year (September 2018 - May 2019)</b>
+                        </h4>
+                        <div class="splitpane">
+                            <div class="termcoursescontainer stackpane" id="fall18">
+                                <h5 class="termname sectionp">Fall 2018</h5>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/MAT235Y1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Calculus II
+                                        </p>
+                                        <p class="coursedesc">
+                                            (MAT235) A multivariable and vector
+                                            calculus course
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/STA247H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Probability
+                                        </p>
+                                        <p class="coursedesc">
+                                            (STA247) Statistical probability and
+                                            modelling course with computer science
+                                            applications
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CSC207H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Software Design
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CSC207) Design patterns, version control, unit testing, refactoring,
+                                            regular expressions.
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CSC236H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Theory of Computation
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CSC236) Introduction to computational
+                                            theory and analysis
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/MAT223H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Linear Algebra
+                                        </p>
+                                        <p class="coursedesc">
+                                            (MAT223) Linear Algebra
+                                        </p>
+                                    </div>
+                                </a>
+                            <!-- </div> -->
+                            </div>
+                            <div class="termcoursescontainer stackpane" id="winter19">
+                                <h5 class="termname sectionp">Winter 2019</h5>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/MAT235Y1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Calculus II
+                                        </p>
+                                        <p class="coursedesc">
+                                            (MAT235 Cont) A multivariable and vector calculus course
+
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/STA248H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Statistics
+                                        </p>
+                                        <p class="coursedesc">
+                                            (STA248) Statistics course with focus
+                                            on data analysis with computer
+                                            applications
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CSC209H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Systems Programming
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CSC209) Unix, pipes, filters, processes
+                                            signals, system calls, network
+                                            programming and C
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CSC263H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Data Structs and Analysis
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CSC263) Standard data structures and
+                                            algorithms course, balanced trees,
+                                            hashing, heaps, forests, graphs, queues,
+                                            disjoint sets
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CSC258H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Computer Organization
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CSC258) Machine language, digital
+                                            representation, system organization,
+                                            digital logic circuits, verilog
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabcontent" id="firstyear">
+                        <h4 class="sectionp yearname">
+                            <b>First Year (September 2017 - May 2018)</b>
+                        </h4>
+                        <div class="splitpane">
+                            <div class="termcoursescontainer stackpane" id="fall17">
+                                <h5 class="termname sectionp">Fall 2017</h5>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/MAT137Y1">
+                                <div class="courseitem">
+                                    <p class="coursename">
+                                        Calculus I
+                                    </p>
+                                    <p class="coursedesc">
+                                        (MAT137) A proof based differential
+                                        calculus course
+                                    </p>
+                                </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CSC108H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Intro to Programming
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CSC108) Introduction to programming
+                                            in Python
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/PHL233H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Philosophy for Scientists
+                                        </p>
+                                        <p class="coursedesc">
+                                            (PHL233) Philosophy in the context of
+                                            science and scientific realism
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CIN105Y1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Intro to Film Studies
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CIN105) Introduction to filmmaking and
+                                            cinema
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="http://www.artsci.utoronto.ca/current/course/fyh-1/2018-19/sii199h1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Popular Culture
+                                        </p>
+                                        <p class="coursedesc">
+                                            (SII199) Movements in popular culture
+                                            throughout 20th and 21st century
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="termcoursescontainer stackpane" id="winter18">
+                                <h5 class="termname sectionp">Winter 2018</h5>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/MAT137Y1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Calculus I
+                                        </p>
+                                        <p class="coursedesc">
+                                            (MAT137 Cont) A proof based integral
+                                            calculus and series course
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CSC148H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Intro to Comp Sci
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CSC148) Introduction basic computer
+                                            science principles, data structures, and
+                                            algorithms
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CSC165H1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Mathematical Reasoning for CS
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CSC165) Discrete maths course, introduction to number theory, asymptotics, graph theory, etc.
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="https://fas.calendar.utoronto.ca/course/CIN105Y1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Intro to Film Studies
+                                        </p>
+                                        <p class="coursedesc">
+                                            (CIN105 Cont) Theory of film and narrative styles
+                                        </p>
+                                    </div>
+                                </a>
+                                <a class="courselink" target="_blank" href="http://www.artsci.utoronto.ca/current/course/fyh-1/2018-19/pmu199h1">
+                                    <div class="courseitem">
+                                        <p class="coursename">
+                                            Astronomy at the Frontier
+                                        </p>
+                                        <p class="coursedesc">
+                                            (PMU199) A cursory look at recent discoveries in the field of astronomy
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="scroll_top_btn" id="scroll_top_btn">
+        <p class="scroll_top_btn_label"> Top of Page </p>
+        <i class="material-icons md-48 scrolltop">label_important</i>
+    </div>
+</footer>
+
+<script src="Scripts/header_scroll.js" type="text/javascript"></script>
+<script src="Scripts/network_graphic.js" type="text/javascript"></script>
+<script src="Scripts/course_tabs.js" type="text/javascript"></script>
+</body>
+</html>
