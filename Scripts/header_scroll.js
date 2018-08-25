@@ -1,7 +1,7 @@
 // Send to top on refresh to avoid wacky animation, uncomment on bug discovery
-// window.onbeforeunload = function () {
-//     $(window).scrollTop(0);
-// }
+window.onbeforeunload = function () {
+    $(window).scrollTop(0);
+}
 
 // init some handy global vars
 var target = document.getElementById('hello_world');
