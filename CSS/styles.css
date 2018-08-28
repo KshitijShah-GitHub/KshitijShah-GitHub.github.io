@@ -782,22 +782,10 @@ div.courseitem {
 
     .md-32 {
         font-size: 1.35em;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        transition: all 0.2s ease-in-out;
     }
 
     .linktext {
-        display: flex;
-        align-self: stretch;
-
-        position: relative;
-        text-align: left;
-        font-weight: 300;
-        font-family: Roboto, sans-serif;
         font-size: 1.25em;
-        line-height: 1.75em;
-        transition: all 0.2s ease-in-out;
-        text-decoration: none;
-        color: var(--darkgray);
+        line-height: 1.5em;
     }
 }
