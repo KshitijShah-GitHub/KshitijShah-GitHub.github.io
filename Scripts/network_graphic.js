@@ -52,6 +52,7 @@ function init() {
     canvas.height = canvasHeight;
     if (windowWidth <= 1125) {
         isMobile = true;
+        numNodes = 15; 
     }
     $(canvas).css('top', cTopShift);
     $(canvas).css('left', cSideShift);

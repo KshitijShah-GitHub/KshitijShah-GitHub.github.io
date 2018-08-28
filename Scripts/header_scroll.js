@@ -74,23 +74,23 @@ function hello_world() {
         }, 100)
     }
     else {
-        setInterval(function () {
-            if (anim_playing === false && scrolled === true) {
-                letterCount = string.length + 1;
-            }
-            if (anim_playing === false && scrolled === false) {
-                letterCount = string.length + 1;
-            }
-            if (anim_playing === true && scrolled === true) {
-                letterCount = string.length + 1;
-            }
-            if (letterCount < string.length + 1 && anim_playing === true) {
-                target.innerHTML = string.substring(0, letterCount);
-                setTimeout(function() {
-                        letterCount ++;
-                }, 0)
-            }
-        }, 100)
+        // setInterval(function () {
+        //     if (anim_playing === false && scrolled === true) {
+        //         letterCount = string.length + 1;
+        //     }
+        //     if (anim_playing === false && scrolled === false) {
+        //         letterCount = string.length + 1;
+        //     }
+        //     if (anim_playing === true && scrolled === true) {
+        //         letterCount = string.length + 1;
+        //     }
+        //     if (letterCount < string.length + 1 && anim_playing === true) {
+        //         target.innerHTML = string.substring(0, letterCount);
+        //         setTimeout(function() {
+        //                 letterCount ++;
+        //         }, 0)
+        //     }
+        // }, 100)
     }
 }
 
