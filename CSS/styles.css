@@ -94,8 +94,8 @@ div.sectionblock {
     position: relative;
     margin-left: 3%;
     margin-right: 3%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    /* margin-top: 10%;
+    margin-bottom: 10%; */
     padding: 3%;
     z-index: 2;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
@@ -769,10 +769,12 @@ div.courseitem {
     }
 
     #skillsblock {
+        margin-top: 25%;
         top: 225% !important:
     }
 
     #projectsblock {
+        margin-top: 25%;
         top: 250% !important;
     }
 
