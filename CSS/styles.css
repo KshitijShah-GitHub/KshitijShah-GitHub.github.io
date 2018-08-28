@@ -748,13 +748,20 @@ div.courseitem {
     transition: all 0.15s ease-in-out;
 }
 
-@media only screen and (max-width: 768px) {
-    .scroll_top_btn:hover .scroll_top_btn_label {
-        display: none
+@media screen and (hover: none) {
+    .scroll_top_btn_label {
+        display: none;
     }
 
-    .sectionblock {
-        height: 80%;
+    .material-icons.md-48 {
+        font-size: 3.5em;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .scroll_top_btn_label {
+        display: none;
     }
 
     #whoamiblock {
