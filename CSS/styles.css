@@ -340,10 +340,6 @@ div.stackpane {
     width: 100%;
 }
 
-.projectitem:hover .projectimagecontainer {
-    width: 30%;
-}
-
 .projlink {
     text-decoration: none;
     outline-color: red;
@@ -558,11 +554,6 @@ div.tabnav {
     text-decoration: none;
 }
 
-.tabnav button:hover {
-    border-top-width: 10%;
-    background-color: #ddd;
-}
-
 .tabnav button.active {
     font-style: italic;
     color: var(--white);
@@ -627,15 +618,6 @@ div.courseitem {
     position: relative;
     z-index: 3;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-}
-
-.courseitem:hover {
-    padding-top: 4%;
-    padding-bottom: 4%;
-}
-
-.courseitem:hover .coursename {
-    font-size: 1.25em;
 }
 
 .coursename {
@@ -719,17 +701,6 @@ div.courseitem {
     transition: all 0.3s ease-in-out;
 }
 
-.scroll_top_btn:hover .scroll_top_btn_label {
-    position: fixed;
-    display: inline-flex;
-    right: 0.75em;
-    bottom: 4.3em;
-    text-align: center;
-    animation-name: from_bottom;
-    animation-duration: 0.4s;
-    animation-timing-function: ease-in-out;
-}
-
 .displayNone {
     display: none;
 }
@@ -748,11 +719,35 @@ div.courseitem {
     transition: all 0.15s ease-in-out;
 }
 
-@media screen and (hover: none) {
-    * {
-        pointer-events: none !important;
+@media screen and (hover: hover) {
+    .scroll_top_btn:hover .scroll_top_btn_label {
+        position: fixed;
+        display: inline-flex;
+        right: 0.75em;
+        bottom: 4.3em;
+        text-align: center;
+        animation-name: from_bottom;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in-out;
     }
 
+    .courseitem:hover {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .courseitem:hover .coursename {
+        font-size: 1.25em;
+    }
+
+    .tabnav button:hover {
+        border-top-width: 10%;
+        background-color: #ddd;
+    }
+
+    .projectitem:hover .projectimagecontainer {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 1126px) {
