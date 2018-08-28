@@ -16,7 +16,7 @@ init();
 function init () {
     height = $(window).height();
     width = $(window).width();
-    if (width <= 780) {
+    if (width <= 1125) {
         isMobile = true;
     }
     cursor_blink();

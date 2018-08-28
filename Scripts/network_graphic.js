@@ -50,7 +50,7 @@ animate();  // run animation if runAnimation is true
 function init() {
     canvas.width = canvasWidth;
     canvas.height = canvasHeight;
-    if (windowWidth < 760) {
+    if (windowWidth <= 1125) {
         isMobile = true;
     }
     $(canvas).css('top', cTopShift);
