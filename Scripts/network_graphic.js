@@ -23,7 +23,6 @@ var cSideShift = windowWidth * cLShiftRatio;  // Shift of Canvas from left
 var cTopShift = windowHeight * cTShiftRatio;  // Shift of Canvas from top
 
 // Set quanitity constants for nodes
-const numNodes = 25;  // number of generated moving nodes
 const r = 4;  // radius of each node
 const startang = 0; // init angle (radians)
 const endang = 2*Math.PI; // end angle for full circle (radians)
@@ -31,6 +30,7 @@ const rotdir = false; // draw counterclockwiae bool
 const nodeGenBoxRatio = 0.9;
 
 // Initialize some variables for node control
+var numNodes = 25;  // number of generated moving nodes
 var nodeArray = [];
 var convx = 0.5*canvasWidth; // convergence point on scroll (x)
 var convy = canvasHeight - 2*r; // convergence point on scroll (y)
@@ -52,7 +52,7 @@ function init() {
     canvas.height = canvasHeight;
     if (windowWidth <= 1125) {
         isMobile = true;
-        numNodes = 15; 
+        numNodes = 15;
     }
     $(canvas).css('top', cTopShift);
     $(canvas).css('left', cSideShift);
