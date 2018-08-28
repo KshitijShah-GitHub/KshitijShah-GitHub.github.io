@@ -749,6 +749,10 @@ div.courseitem {
 }
 
 @media screen and (hover: none) {
+    * {
+        display: none;
+    }
+
     .scroll_top_btn_label {
         display: none;
     }
