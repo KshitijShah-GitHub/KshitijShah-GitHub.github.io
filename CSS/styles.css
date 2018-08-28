@@ -92,7 +92,10 @@ div.sectionblock {
     align-content: stretch;
 
     position: relative;
-    margin: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     padding: 3%;
     z-index: 2;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
@@ -435,12 +438,6 @@ div.stackpane {
     overflow-x: hidden;
 }
 
-.md-32 {
-    font-size: 1.85em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: all 0.2s ease-in-out;
-}
-
 div.gridpane {
     display: grid;
     grid-template-rows: auto;
@@ -453,6 +450,12 @@ div.gridpane {
     grid-column-gap: 1em;
     overflow-x: scroll;
     margin-top: 10%;
+}
+
+.md-32 {
+    font-size: 1.85em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
 }
 
 .linktext {
@@ -743,4 +746,51 @@ div.courseitem {
 * {
     /* outline-style: dotted; */
     transition: all 0.15s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .scroll_top_btn:hover .scroll_top_btn_label {
+        display: none
+    }
+
+    .sectionblock {
+        height: 80%;
+    }
+
+    #whoamiblock {
+        top: 200%;
+    }
+
+    #skillsblock {
+        top: 225%:
+    }
+
+    #projectsblock {
+        top: 250%;
+    }
+
+    #resourcesblock {
+        top: 275%;
+    }
+
+    .md-32 {
+        font-size: 1.35em;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .linktext {
+        display: flex;
+        align-self: stretch;
+
+        position: relative;
+        text-align: left;
+        font-weight: 300;
+        font-family: Roboto, sans-serif;
+        font-size: 1.25em;
+        line-height: 1.75em;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        color: var(--darkgray);
+    }
 }
