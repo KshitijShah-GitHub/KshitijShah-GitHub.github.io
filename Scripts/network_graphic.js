@@ -39,6 +39,8 @@ var x, y, dx, dy;
 var converging = false;
 var converged = false;
 
+var isMobile;
+
 // Set initial values for sizing
 init();
 remake_nodes();  // Make initial nodes
@@ -48,6 +50,9 @@ animate();  // run animation if runAnimation is true
 function init() {
     canvas.width = canvasWidth;
     canvas.height = canvasHeight;
+    if (windowWidth < 760) {
+        isMobile = true;
+    }
     $(canvas).css('top', cTopShift);
     $(canvas).css('left', cSideShift);
 }
@@ -69,11 +74,12 @@ $(window).resize(function () {
     convx = 0.5*canvasWidth; // convergence point on scroll (x)
     convy = canvasHeight - r;
 
-    runAnimation = false;
-    nodeArray = [];
-    c.clearRect(0, 0, canvasWidth, canvasHeight);
-
-    remake_nodes();
+    if (isMobile === false) {
+        runAnimation = false;
+        nodeArray = [];
+        c.clearRect(0, 0, canvasWidth, canvasHeight);
+        remake_nodes();
+    }
 })
 
 // Remake all Nodes

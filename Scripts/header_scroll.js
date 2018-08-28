@@ -8,6 +8,7 @@ var target = document.getElementById('hello_world');
 var scrolled = false;
 var anim_playing = true;
 var height, width;
+var isMobile = false;
 
 init();
 
@@ -15,6 +16,9 @@ init();
 function init () {
     height = $(window).height();
     width = $(window).width();
+    if (width <= 780) {
+        isMobile = true;
+    }
     cursor_blink();
     hello_world();
 }
@@ -48,24 +52,45 @@ function hello_world() {
     anim_playing = true;
     scolled = false;
     target.setAttribute('style', 'color:' + color);
-    setInterval(function () {
-        if (anim_playing === false && scrolled === true) {
-            letterCount = string.length + 1;
-        }
-        if (anim_playing === false && scrolled === false) {
-            letterCount = string.length + 1;
-        }
-        if (anim_playing === true && scrolled === true) {
-            scrolled = false;
-            letterCount = 0;
-        }
-        if (letterCount < string.length + 1 && anim_playing === true) {
-            target.innerHTML = string.substring(0, letterCount);
-            setTimeout(function() {
-                    letterCount ++;
-            }, 700)
-        }
-    }, 100)
+    if (isMobile === false) {
+        setInterval(function () {
+            if (anim_playing === false && scrolled === true) {
+                letterCount = string.length + 1;
+            }
+            if (anim_playing === false && scrolled === false) {
+                letterCount = string.length + 1;
+            }
+            if (anim_playing === true && scrolled === true) {
+                scrolled = false;
+                letterCount = 0;
+            }
+            if (letterCount < string.length + 1 && anim_playing === true) {
+                target.innerHTML = string.substring(0, letterCount);
+                setTimeout(function() {
+                        letterCount ++;
+                }, 700)
+            }
+        }, 100)
+    }
+    else {
+        setInterval(function () {
+            if (anim_playing === false && scrolled === true) {
+                letterCount = string.length + 1;
+            }
+            if (anim_playing === false && scrolled === false) {
+                letterCount = string.length + 1;
+            }
+            if (anim_playing === true && scrolled === true) {
+                letterCount = string.length + 1;
+            }
+            if (letterCount < string.length + 1 && anim_playing === true) {
+                target.innerHTML = string.substring(0, letterCount);
+                setTimeout(function() {
+                        letterCount ++;
+                }, 700)
+            }
+        }, 100)
+    }
 }
 
 // change CSS based on scroll position
@@ -89,11 +114,11 @@ $(window).scroll(function() {
         $('.scroll_top_btn').fadeIn(300, function() {
             $('.scroll_top_btn').removeClass('displayNone');
         });
-        if (anim_playing === false) {
+        if (anim_playing === false && isMobile === false) {
             scrolled = true;
             target.innerHTML = '';
         }
-        if (anim_playing === true) {
+        if (anim_playing === true && isMobile === false) {
             scrolled = false;
             anim_playing = false;
             target.innerHTML = '';
