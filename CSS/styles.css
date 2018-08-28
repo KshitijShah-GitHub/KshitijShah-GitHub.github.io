@@ -749,6 +749,21 @@ div.courseitem {
 }
 
 @media screen and (hover: none) {
+<<<<<<< HEAD
+=======
+    * {
+        display: none;
+    }
+
+    .scroll_top_btn_label {
+        display: none;
+    }
+
+    .material-icons.md-48 {
+        font-size: 3.5em;
+    }
+
+>>>>>>> 1e6b2df450c050c3e25a0222692ddbd7b45d0426
     * {
         pointer-events: none !important;
     }
