@@ -87,7 +87,7 @@ function hello_world() {
                 target.innerHTML = string.substring(0, letterCount);
                 setTimeout(function() {
                         letterCount ++;
-                }, 700)
+                }, 0)
             }
         }, 100)
     }
