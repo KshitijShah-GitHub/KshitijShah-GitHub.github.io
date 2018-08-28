@@ -17,7 +17,8 @@ function init () {
     height = $(window).height();
     width = $(window).width();
     if (width <= 1125) {
-        isMobile = true;
+        isMobile = true
+        anim_playing = false;
     }
     cursor_blink();
     hello_world();
@@ -103,7 +104,7 @@ $(window).scroll(function() {
     } else {
         $('#gray_bg').css('opacity', '0');
     }
-    if (position === 0 && scrolled === true) {
+    if (position === 0 && scrolled === true && isMobile === false) {
         if (anim_playing === false) {
             scrolled = false;
             anim_playing = true;
