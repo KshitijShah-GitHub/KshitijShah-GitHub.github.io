@@ -94,8 +94,8 @@ div.sectionblock {
     position: relative;
     margin-left: 3%;
     margin-right: 3%;
-    /* margin-top: 10%;
-    margin-bottom: 10%; */
+    margin-top: 10%;
+    margin-bottom: 10%;
     padding: 3%;
     z-index: 2;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
@@ -765,19 +765,19 @@ div.courseitem {
     }
 
     #whoamiblock {
-        top: 200%;
+        top: 200% !important;
     }
 
     #skillsblock {
-        top: 225%:
+        top: 225% !important:
     }
 
     #projectsblock {
-        top: 250%;
+        top: 250% !important;
     }
 
     #resourcesblock {
-        top: 275%;
+        top: 275% !important;
     }
 
     .md-32 {
