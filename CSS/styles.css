@@ -764,22 +764,26 @@ div.courseitem {
         font-size: 4.5em;
     }
 
+    .sectionblock {
+        margin-top: 25%;
+        margin-top: 10%;
+    }
+
     #whoamiblock {
-        top: 200% !important;
+        margin-top: 0%;
+        top: 250% !important;
     }
 
     #skillsblock {
-        margin-top: 25%;
-        top: 225% !important:
+        top: 250% !important:
     }
 
     #projectsblock {
-        margin-top: 25%;
         top: 250% !important;
     }
 
     #resourcesblock {
-        top: 275% !important;
+        top: 250% !important;
     }
 
     .md-32 {
