@@ -74,6 +74,7 @@ function hello_world() {
         }, 100)
     }
     else {
+        target.innerHTML = string;
         // setInterval(function () {
         //     if (anim_playing === false && scrolled === true) {
         //         letterCount = string.length + 1;
