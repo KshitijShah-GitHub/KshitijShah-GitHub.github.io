@@ -756,6 +756,10 @@ div.courseitem {
     .material-icons.md-48 {
         font-size: 3.5em;
     }
+
+    * {
+        pointer-events: none !important;
+    }
 }
 
 
