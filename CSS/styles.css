@@ -756,6 +756,11 @@ div.courseitem {
 }
 
 @media screen and (max-width: 1126px) {
+    div.gridpane {
+        grid-template-columns: 3em auto;
+        overflow-x: hidden;
+    }
+
     .scroll_top_btn_label {
         display: none;
     }
@@ -781,11 +786,11 @@ div.courseitem {
     }
 
     .md-32 {
-        font-size: 1.35em;
+        font-size: 1.25em;
     }
 
     .linktext {
-        font-size: 1.25em;
+        font-size: 1.2em;
         line-height: 1.5em;
     }
 }
